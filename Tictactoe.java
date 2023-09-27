@@ -140,7 +140,7 @@ public class Tictactoe {
 		return n1;
 	}
 
-/*	public static void oinput(int n,int m,int count) {
+	public static void oinput(int n,int m,int count) {
 		if (count==1 && (tictac[1][1]=='_')) {
 			tictac[1][1]=O;
 			display(n,m,O);
@@ -531,7 +531,8 @@ public class Tictactoe {
 					}
 				}
 			}
-		}else if(count==5) {
+		}
+		else if(count==5) {
 				if(tictac[0][0]=='_') {
 					 tictac[0][0]=X;
 					 if(display(0,0,X)=='y') {
@@ -755,7 +756,6 @@ public class Tictactoe {
 			}
 		}
 	
-	*/
 	
 	
 	
@@ -789,7 +789,7 @@ public class Tictactoe {
 					System.out.println("you won!");
 				return;	
 				}
-	//			oinput(n,m,count);
+				oinput(n,m,count);
 				if(display(0,0,O)=='y'||display(2,1,'O')=='y'||display(0,1,'O')=='y') {
 					System.out.println("you loss! think more.");
 					return;	
@@ -804,13 +804,10 @@ public class Tictactoe {
 				System.out.println("wrong input ");
 				continue;
 			}
-						
 			
 		}
 		
-		
-		
-	sc.close();
+		sc.close();
 	}
 	
 	
